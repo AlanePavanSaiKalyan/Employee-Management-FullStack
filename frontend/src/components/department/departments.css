@@ -1,0 +1,103 @@
+.employee-dlist-container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  height:calc(100vh - 75px);
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.dlist-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dheader-text h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+
+.dadd-btn {
+  background-color: #2563eb; 
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.dadd-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.dadd-btn:active {
+  transform: scale(0.97);
+}
+
+
+.dtable-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.dept-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.dept-table thead {
+  background-color: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dept-table th {
+  padding: 0.5rem;
+  font-weight: 600;
+  color: #334155;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.dept-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.75rem;
+}
+
+
+.dept-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.dept-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.dept-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+.dempty-state {
+  text-align: center;
+  padding: 2rem !important;
+  color: #94a3b8;
+  font-style: italic;
+}
+.dtabicon{
+    cursor: pointer;
+    margin-top: 3px;
+}

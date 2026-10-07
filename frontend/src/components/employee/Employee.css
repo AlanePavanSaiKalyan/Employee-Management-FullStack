@@ -1,0 +1,259 @@
+.employee-list-container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  height:calc(100vh - 75px);
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.list-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-text h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+
+.add-btn {
+  background-color: #2563eb; 
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.add-btn:active {
+  transform: scale(0.97);
+}
+
+
+.table-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.employee-table thead {
+  background-color: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.employee-table th {
+  padding: 0.5rem;
+  font-weight: 600;
+  color: #334155;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.employee-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.75rem;
+}
+
+
+.employee-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dept-badge {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px; /* Pill shape */
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem !important;
+  color: #94a3b8;
+  font-style: italic;
+}
+.tabicon{
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+/* EmployeeForm */
+
+
+
+.form-page-container {
+  display: flex;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-card {
+  background-color: #ffffff;
+  width: 40%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  padding: 2rem;
+}
+
+
+.form-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+}
+
+.form-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.form-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ddd;
+  border-radius: 6px;
+  outline: none;
+  color: #0f172a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group select{
+    padding: 0.6rem 0.8rem;
+  font-size: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ddd;
+  border-radius: 6px;
+  outline: none;
+  color: #0f172a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+
+.btn-submit, .btn-cancel {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-cancel {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-cancel:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
